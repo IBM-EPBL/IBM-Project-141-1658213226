@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{%  block head %} 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume_uploader</title>
+    <link rel="stylesheet" href="style.css" />
+    {%  endblock %}
+
+    {% block content %}
+    <a href="/">HOME</a>
+<a href="/signup">signup Page</a>
+<a href="/login">Login </a>
+<a href="/reume">Resume</a>
+    <div class="signup-box">
+    <div class="col-md-6 offset-md-3 mt-5">
+        <h1>Resume Upload</h1>
+        <form accept-charset="UTF-8" action="/reume" method="POST" enctype="multipart/form-data" target="_blank" >
+            <div class="form-group">
+                <label for="exampleInputName">Full Name*</label>
+                <input type="text" name="fullname" class="form-control" id="InputName" placeholder="Your Name*" required="required" >
+
+                <label for="address" required="required">Address*</label>
+                <input type="text" name="address" class="form-control" id="Inputaddress" aria-describedby="emailHelp" placeholder="Your Address*">
+                <br>
+                <br>
+                <label for="phone_number" required="required">Email address*</label>
+                <input type="phone" name="phone" class="form-control" id="Inputphone" aria-describedby="emailHelp" placeholder="Your Phone number*">
+                <br>
+                <br>
+                <label class="mr-4">Upload your CV:</label>
+                <input type="file" name="file">
+            </div>
+            <button type="submit" class="btn btn-submit">Submit</button>
+        </form>
+    </div>
+ {% endblock %}}

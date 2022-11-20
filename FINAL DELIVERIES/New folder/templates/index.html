@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{%  block head %} 
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill_Job_Recommender</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/templates/sjr.js"></script>
+    {% endblock %}
+
+    {% block content %} 
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#job">Team</a></li>
+    </ul>
+  </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/templates/contact.html">Contact</a></li>
+                <li><a href="/templates/signup.html">Signup</a></li>
+                <li><a href="/templates/login.html">Login</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">JOB RECOMMENDER</h1>
+            <p>We recommend you the jobs based on your skills.</p>
+            <a href="#" class="btn btn-primary">MORE</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've been helping people to find the best jobs.</h2>
+                <p>
+                    Our motto is to provide the recommendations for our users to find the best job 
+                    and their dream jobs based on the skills they possess.We also help our users to improve 
+                    their skills for their desired jobs.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="/templates/team/about.jpeg.jpg" alt="jobs" />
+            </div>
+        </div>
+    </section>
+    <section id="job">
+        <h2>Our Team</h2>
+        <div class="team-container container">
+            <div class="team-type mem1">
+                <div class="img-container">
+                    <img src="/templates/team/barath.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Barathraj</h3>
+                        <a href="https://instagram.com/_.crazie_boi._?igshid=YmMyMTA2M2Y=" class="btn btn-primary" target="blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-type mem2">
+                <div class="img-container">
+                    <img src="/templates/team/kasi.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Kasinathan</h3>
+                        <a href="https://instagram.com/senthilkasinathan?igshid=YmMyMTA2M2Y=" class="btn btn-primary" target="blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-type mem3">
+                <div class="img-container">
+                    <img src="/templates/team/sandy.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Santhosh Kumar</h3>
+                        <a href="https://instagram.com/santhosh_d.s?igshid=YmMyMTA2M2Y=" class="btn btn-primary" target="blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-type mem3">
+                <div class="img-container">
+                    <img src="/templates/team/vicky.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Vignesh Ram</h3>
+                        <a href="#" class="btn btn-primary" target="blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section id="testimonials">
+        <h2 class="testimonial-title">Our Users</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="/templates/team/nathan.jpg" alt="happy_customer" />
+                        <p class="customer-name">Nathan</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+<pre>
+
+<h5>Data analyst</h5>
+
+<h4>FEEDBACK</h4>
+Really useful got
+my dream job
+</pre>
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="/templates/team/pratham.jpg" alt="happy_customer" />
+                        <p class="customer-name">Pratham</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+<pre>
+
+<h5>Developer</h5>
+
+<h4>FEEDBACK</h4>
+I'm happy that I
+came to know about 
+Skill_Job_Recommender
+</pre>
+                </p>
+            
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="/templates/team/rohit.jpg" alt="happy_customer" />
+                        <p class="customer-name">Rohith</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+<pre>
+
+<h5>UI/UX Designer</h5>
+
+<h4>FEEDBACK</h4>
+Responsive,useful.
+Got a job according to 
+my skills
+</pre>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <h2>Skill_Job_Recommender &copy; all rights reserved</h2>
+    </footer>
+    {% block content %} 
+
+
+
